@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name diploma_footprints)(type KiCad)(uri ${KIPRJMOD}/librerias/diploma_footprints.pretty)(options "")(descr ""))
+  (lib (name librerias)(type KiCad)(uri ${KIPRJMOD}/librerias)(options "")(descr ""))
+  (lib (name imagenes)(type KiCad)(uri "C:/almacen/fumblau/proyectos/Diploma comenius/Diploma_joy/diploma/imagenes")(options "")(descr ""))
+)

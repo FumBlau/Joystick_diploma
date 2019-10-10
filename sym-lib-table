@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name diploma-rescue)(type Legacy)(uri ${KIPRJMOD}/diploma-rescue.lib)(options "")(descr ""))
+  (lib (name Diploma_simbolos)(type Legacy)(uri ${KIPRJMOD}/librerias/Diploma_simbolos.lib)(options "")(descr ""))
+)

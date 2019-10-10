@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Pad_arrow
+#
+DEF Pad_arrow BT 0 40 Y Y 1 F N
+F0 "BT" -200 0 50 H V C CNN
+F1 "Pad_arrow" 250 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 -100 0 100 0 100 -200 0 -300 -100 -200 -100 0 F
+X ~ 1 0 100 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# pad_btn
+#
+DEF pad_btn BT 0 40 Y Y 1 F N
+F0 "BT" -300 -150 50 H V C CNN
+F1 "pad_btn" -250 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 180 0 1 0 F
+X ~ 1 0 250 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
