@@ -7469,7 +7469,7 @@ U 1 1 5BCA6026
 P 1650 5750
 F 0 "BT2" H 1700 5800 50  0000 L CNN
 F 1 "Pad_arrow" H 1800 5850 50  0001 L CNN
-F 2 "diploma_footprints:Pad_arrow_2" H 1650 5750 50  0001 C CNN
+F 2 "diploma_footprints:Pad_arrow_2_muy_corto" H 1650 5750 50  0001 C CNN
 F 3 "" H 1650 5750 50  0001 C CNN
 	1    1650 5750
 	1    0    0    -1  
@@ -7480,7 +7480,7 @@ U 1 1 5BCA60A4
 P 2100 6200
 F 0 "BT4" V 2200 6300 50  0000 C CNN
 F 1 "Pad_arrow" V 2050 6900 50  0001 C CNN
-F 2 "diploma_footprints:Pad_arrow_2" H 2100 6200 50  0001 C CNN
+F 2 "diploma_footprints:Pad_arrow_2_muy_corto" H 2100 6200 50  0001 C CNN
 F 3 "" H 2100 6200 50  0001 C CNN
 	1    2100 6200
 	0    1    1    0   
@@ -7491,7 +7491,7 @@ U 1 1 5BCA6135
 P 1650 6600
 F 0 "BT3" H 1550 6700 50  0000 R CNN
 F 1 "Pad_arrow" H 1522 6551 50  0001 R CNN
-F 2 "diploma_footprints:Pad_arrow_2" H 1650 6600 50  0001 C CNN
+F 2 "diploma_footprints:Pad_arrow_2_muy_corto" H 1650 6600 50  0001 C CNN
 F 3 "" H 1650 6600 50  0001 C CNN
 	1    1650 6600
 	-1   0    0    1   
@@ -7502,7 +7502,7 @@ U 1 1 5BCA61F3
 P 1250 6200
 F 0 "BT1" V 1150 6350 50  0000 R CNN
 F 1 "Pad_arrow" V 1350 6650 50  0001 R CNN
-F 2 "diploma_footprints:Pad_arrow_2" H 1250 6200 50  0001 C CNN
+F 2 "diploma_footprints:Pad_arrow_2_muy_corto" H 1250 6200 50  0001 C CNN
 F 3 "" H 1250 6200 50  0001 C CNN
 	1    1250 6200
 	0    -1   -1   0   
@@ -7642,12 +7642,6 @@ Text Label 4050 1400 2    50   ~ 0
 MOSI
 Text Label 4050 1300 2    50   ~ 0
 CLK
-Text Label 800  3600 0    50   ~ 0
-MISO
-Text Label 1750 3700 2    50   ~ 0
-MOSI
-Text Label 800  3700 0    50   ~ 0
-CLK
 Text Label 2200 1200 2    50   ~ 0
 reset
 Wire Wire Line
@@ -7659,63 +7653,6 @@ Wire Wire Line
 Connection ~ 2400 1200
 Wire Wire Line
 	2400 1200 2550 1200
-Text Label 800  3800 0    50   ~ 0
-reset
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J2
-U 1 1 5BCB445C
-P 1250 3700
-F 0 "J2" H 1300 4017 50  0000 C CNN
-F 1 "ICSP" H 1300 3926 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 1250 3700 50  0001 C CNN
-F 3 "~" H 1250 3700 50  0001 C CNN
-	1    1250 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 5BCB4679
-P 1600 3800
-F 0 "#PWR0106" H 1600 3550 50  0001 C CNN
-F 1 "GND" H 1605 3627 50  0000 C CNN
-F 2 "" H 1600 3800 50  0001 C CNN
-F 3 "" H 1600 3800 50  0001 C CNN
-	1    1600 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0107
-U 1 1 5BCB46DF
-P 1600 3550
-F 0 "#PWR0107" H 1600 3400 50  0001 C CNN
-F 1 "+5V" H 1615 3723 50  0000 C CNN
-F 2 "" H 1600 3550 50  0001 C CNN
-F 3 "" H 1600 3550 50  0001 C CNN
-	1    1600 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	800  3600 1050 3600
-Wire Wire Line
-	800  3700 1050 3700
-Wire Wire Line
-	800  3800 1050 3800
-Wire Wire Line
-	1550 3600 1600 3600
-Wire Wire Line
-	1600 3600 1600 3550
-Wire Wire Line
-	1550 3700 1750 3700
-Wire Wire Line
-	1550 3800 1600 3800
-Wire Notes Line
-	4550 7700 500  7700
-Wire Notes Line
-	500  5100 4550 5100
-Wire Notes Line
-	4550 500  500  500 
-Wire Notes Line
-	500  500  500  7700
 Text Notes 2100 7250 0    50   ~ 0
 Capacitive gamepad\n
 Text Label 1850 2200 0    50   ~ 0
@@ -7824,4 +7761,153 @@ Wire Wire Line
 Wire Wire Line
 	4250 2700 4500 2700
 Connection ~ 4250 2700
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5DAF4B85
+P 5300 5750
+F 0 "TP1" H 5358 5822 50  0000 L CNN
+F 1 "TestPoint" H 5358 5777 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5500 5750 50  0001 C CNN
+F 3 "~" H 5500 5750 50  0001 C CNN
+	1    5300 5750
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  500  500  7700
+Wire Wire Line
+	6600 6050 6650 6050
+Wire Wire Line
+	6650 5850 6650 5800
+Wire Wire Line
+	6600 5850 6650 5850
+$Comp
+L power:+5V #PWR0107
+U 1 1 5BCB46DF
+P 6650 5800
+F 0 "#PWR0107" H 6650 5650 50  0001 C CNN
+F 1 "+5V" H 6665 5973 50  0000 C CNN
+F 2 "" H 6650 5800 50  0001 C CNN
+F 3 "" H 6650 5800 50  0001 C CNN
+	1    6650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5BCB4679
+P 6650 6050
+F 0 "#PWR0106" H 6650 5800 50  0001 C CNN
+F 1 "GND" H 6655 5877 50  0000 C CNN
+F 2 "" H 6650 6050 50  0001 C CNN
+F 3 "" H 6650 6050 50  0001 C CNN
+	1    6650 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J2
+U 1 1 5BCB445C
+P 6300 5950
+F 0 "J2" H 6350 6267 50  0000 C CNN
+F 1 "ICSP" H 6350 6176 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 6300 5950 50  0001 C CNN
+F 3 "~" H 6300 5950 50  0001 C CNN
+	1    6300 5950
+	1    0    0    -1  
+$EndComp
+Text Label 5850 6050 0    50   ~ 0
+reset
+Text Label 5850 5950 0    50   ~ 0
+CLK
+Text Label 6800 5950 2    50   ~ 0
+MOSI
+Text Label 5850 5850 0    50   ~ 0
+MISO
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5DB01F8E
+P 5550 5750
+F 0 "TP2" H 5608 5822 50  0000 L CNN
+F 1 "TestPoint" H 5608 5777 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5750 5750 50  0001 C CNN
+F 3 "~" H 5750 5750 50  0001 C CNN
+	1    5550 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5DB022D4
+P 5800 5750
+F 0 "TP3" H 5858 5822 50  0000 L CNN
+F 1 "TestPoint" H 5858 5777 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6000 5750 50  0001 C CNN
+F 3 "~" H 6000 5750 50  0001 C CNN
+	1    5800 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5DB0271D
+P 6900 5750
+F 0 "TP4" H 6958 5822 50  0000 L CNN
+F 1 "TestPoint" H 6958 5777 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7100 5750 50  0001 C CNN
+F 3 "~" H 7100 5750 50  0001 C CNN
+	1    6900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5DB02727
+P 7150 5750
+F 0 "TP5" H 7208 5822 50  0000 L CNN
+F 1 "TestPoint" H 7208 5777 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7350 5750 50  0001 C CNN
+F 3 "~" H 7350 5750 50  0001 C CNN
+	1    7150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5DB02731
+P 7400 5750
+F 0 "TP6" H 7458 5822 50  0000 L CNN
+F 1 "TestPoint" H 7458 5777 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7600 5750 50  0001 C CNN
+F 3 "~" H 7600 5750 50  0001 C CNN
+	1    7400 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5750 5800 5850
+Wire Wire Line
+	5800 5850 6100 5850
+Wire Wire Line
+	5550 5750 5550 5950
+Wire Wire Line
+	5550 5950 6100 5950
+Wire Wire Line
+	5300 5750 5300 6050
+Wire Wire Line
+	5300 6050 6100 6050
+Wire Wire Line
+	6650 5850 6900 5850
+Wire Wire Line
+	6900 5850 6900 5750
+Connection ~ 6650 5850
+Wire Wire Line
+	7150 5950 7150 5750
+Wire Wire Line
+	6600 5950 7150 5950
+Wire Wire Line
+	6650 6050 7400 6050
+Wire Wire Line
+	7400 6050 7400 5750
+Connection ~ 6650 6050
+Wire Notes Line
+	4950 500  4950 7700
+Wire Notes Line
+	500  7700 4950 7700
+Wire Notes Line
+	500  500  4950 500 
+Wire Notes Line
+	500  5100 4950 5100
 $EndSCHEMATC
